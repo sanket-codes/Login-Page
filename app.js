@@ -1,6 +1,7 @@
 const username = document.querySelector("#username");
 const pass = document.querySelector("#pass");
 const login = document.querySelector("#login");
+const showPass = document.querySelector("#showPass");
 
 const user = {
   uname: "admin",
@@ -16,5 +17,13 @@ login.addEventListener("click", function (e) {
     alert("Please Enter Credential");
   } else {
     alert("Wrong Credential");
+  }
+});
+
+showPass.addEventListener("click", function () {
+  if (pass.type === "password") {
+    pass.type = "text";
+  } else {
+    pass.type = "password";
   }
 });
