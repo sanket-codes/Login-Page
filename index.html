@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <form id="formDiv" class="formDiv">
+        <h1 class="headFont">Login</h1>
+        <input
+          class="inputBorder"
+          type="username"
+          id="name"
+          placeholder="Username"
+        />
+        <br />
+        <input
+          class="inputBorder"
+          type="password"
+          id="pass"
+          placeholder="Password"
+        />
+        <div class="secDiv">
+          <div>
+            <input type="checkbox" name="rememberMe" id="rememberMe" />
+            <label for="rememberMe">Remember Me</label>
+          </div>
+          <a href="">Forgot Password?</a>
+        </div>
+        <input class="button" type="submit" value="Login" />
+        <p>
+          Don't have an account? <a class="registerClass" href="">Register</a>
+        </p>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
